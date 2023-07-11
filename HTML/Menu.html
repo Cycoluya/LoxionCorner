@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Loxion Corner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Images/New%20Logo.png">
+    <link rel="stylesheet" href="../CSS/Menu.css">
+  </head>
+<body>
+    <div>
+          <p class="logo">
+            <a href="../HTML/Home.html" class="logolink">
+              <img src="../Images/New%20Logo.png" height="100" width="150"></a>
+          </p>
+    </div>
+    <div>
+        <nav class="navi">
+        <ul>
+          <ul>
+            <li id="cartpriceicon" class="mycart">
+                <i class="fa fa-shopping-cart" id="shoppingcart"></i>
+                <span id="counter">0 items</span>
+                <i id="cartprice">R0,00</i>
+            </li>
+            <li id="pages">
+              <ul>
+                <li><a href="../HTML/Home.html">Home</a></li>
+                <!-- <li><a href="../HTML/Events.html">Events</a></li> -->
+                <li><a href="#">Menu</a></li>
+                <li><a href="../HTML/Reservations.html">Reservations</a></li>
+                <li><a href="../HTML/About.html">About</a></li>
+              </ul>
+            </li>
+            <li id="searchbar">
+              <ul>
+                <li>
+                  <form id="searchform">
+                    <button id="btn"><i class="fa fa-search"></i></button>
+                    <input id="searchinput" type="search" placeholder="Search">
+                  </form> 
+                </li>
+              </ul>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    <!-- <h3><u>MENU</u></h3> -->
+      <h1 id="meal">MEALS</h1>
+      <div class="mealtext">
+        <p>Chicken Wrap R30</p>
+        <p>7 Chicken Wings R50</p>
+        <p>Beef, Wors & Wings R150</p>
+      </div>
+      <div class="mealimages">
+        <img src="../Images/Chicken%20wraps.jpg">
+        <img src="../Images/Chicken%20wings.jpg">
+        <img src="../Images/Beef%20and%20wors%20combo.jpg">
+      </div>
+      <div class="addtocart">
+          <input type="submit" value="Order" class="allBtns" id="chickenwrap">
+          <input type="submit" value="Order" class="allBtns" id="chickenwings">
+          <input type="submit" value="Order" class="allBtns" id="beefworswings">
+      </div>
+      <div class="mealtext">
+        <p>Beef Wrap R35</p>
+        <p>Loxion Sandwich R45</p>
+        <p>Wrap & Wings Combo R100</p>
+      </div>
+      <div class="mealimages">
+        <img src="../Images/Beef%20wraps.jpg">
+        <img src="../Images/Sandwich.jpg">
+        <img src="../Images/Wrap%20and%20wings%20platter.jpg">
+      </div>
+      <div class="addtocart">
+        <input type="submit" value="Order" class="allBtns" id="beefwrap">
+        <input type="submit" value="Order" class="allBtns" id="sandwich">
+        <input type="submit" value="Order" class="allBtns" id="wrapwingscombo">
+      </div>
+      <h1 id="drink">DRINKS</h1>
+      <div class="mealtext">
+        <p>Savanna Dry R20</p>
+        <p>Amstel Beer R20</p>
+        <p>Hennessy R550</p>
+      </div>
+      <div class="mealimages">
+        <img src="../Images/Savanna.jpg">
+        <img src="../Images/Amstel.jpg">
+        <img src="../Images/Hennessy.jpg">
+      </div>
+      <div class="addtocart">
+        <input type="submit" value="Order" class="allBtns" id="savanna">
+        <input type="submit" value="Order" class="allBtns" id="amstel">
+        <input type="submit" value="Order" class="allBtns" id="hennessy">
+      </div>
+      <div class="mealtext">
+        <p>Red Square Ice R30</p>
+        <p>Black Label Beer R20</p>
+        <p>Jameson R450</p>
+      </div>
+      <div class="mealimages">
+        <img src="../Images/Red%20square.jpg">
+        <img src="../Images/Black%20label.jpg">
+        <img src="../Images/Jameson.jpg">
+      </div>
+      <div class="addtocart">
+        <input type="submit" value="Order" class="allBtns" id="redsquare">
+        <input type="submit" value="Order" class="allBtns" id="blacklabel">
+        <input type="submit" value="Order" class="allBtns" id="jameson">
+      </div>
+    <div class="totalPriceConfirm">
+        <button type="submit" id="confirmOrder" onclick="openCheckout()">Confirm Order</button>
+    </div>
+    <div class="checkout" id="checkoutpopup">
+      <h2 id="orderdetails">Order Details</h2>
+      <hr>
+      <p id="checkoutitems">items</p>
+      <button type="button" id="checkoutbtn" onclick="closeCheckout()">Send Order</button>
+    </div>
+    <h3>Contact</h3>
+    <div class="contact">
+      <p>Find us at D403 Amaoti Main Road, Inanda, Durban, 4310 or call us on <a href="tel:2774.726.5328">+2774 726 5328</a></p>
+      <p class="email">Send us an email: <a href="email:cycoluya@gmail.com">loxioncorner@gmail.com</a></p>
+    </div>
+    <div class="socials">
+      <p>
+        <a href="https://www.facebook.com/loxioncornermaoti/" target="_blank">
+        <img src="../Images/Facebook_icon.png" width="45" alt="" class="fb"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="w-inline-block">
+        <img src="../Images/Instagram_icon.png" width="45" alt="" class="ig"></a>
+        <a href="https://twitter.com/" target="_blank" class="w-inline-block">
+        <img src="../Images/Twitter_icon.jpg" width="45" alt="" class="tw"></a>
+      </p>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.3518632980495!2d30.9887700834888!3d-29.680576710928783!2m3!
+        1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7059ab492a471%3A0x9d96fd64f9eeb188!2sLoxion%20Corner!5e0!3m2!1sen!2sza!4v1684252466098!5m2!1sen!2sza"
+         width="670" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="copyrights">
+      <p class="rights">Copyright © 2023 Loxion Corner All Rights Reserved.</p>
+      <p class="developer">Developed By CycoTech.</p>
+    </div>
+    <!-- <div class="endofpage"></div> -->
+  </body>
+  <script src="../Javascript/Menu.js"></script>
+</html>
